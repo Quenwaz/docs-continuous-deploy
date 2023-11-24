@@ -1,0 +1,11 @@
+{
+    "permission":{
+        "目录名称":[
+            "255.255.255.255"
+        ]
+    },
+    "fileFilter":{
+        "ignName":[".git", ".gitkeep", "readme.md", "image", "img"],
+        "supportedExt":[".md"]
+    }
+}
