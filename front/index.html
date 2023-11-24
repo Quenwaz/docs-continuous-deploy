@@ -8,6 +8,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/vue.css">
+  <link rel="stylesheet" href="css/katex.min.css">
 </head>
 
 <body>
@@ -45,7 +46,9 @@
   <script src="js/plugin/zoom-image.min.js"></script>
 
   <!-- 支持 LaTex 语言 -->
-  <script src="js/docsify-katex.js"></script>
+  <script src="js/katex.min.js"></script>
+  <script src="js/marked@4.js"></script>
+  <script src="js/docsify-katex.js"></script> <!-- 一定要放置在后面 -->
 
   <!-- 复制代码-->
   <script src="js/plugin/docsify-copy-code.min.js"></script>
