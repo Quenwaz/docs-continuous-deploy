@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/vue.css">
   <link rel="stylesheet" href="css/katex.min.css">
+  <link rel="stylesheet" href="css/sidebar-folder.min.css">
 </head>
 
 <body>
@@ -21,7 +22,8 @@
       name: '<div style="margin:0;height="45px;"><img src="https://docsify.js.org/_media/icon.svg" alt="湖南特能博世科技有限公司" style="object-fit:contain;display: inline-block;vertical-align: middle;" height="45px"><b style="vertical-align: middle;">AlgmDocs</b></div>',
       repo: '',
       maxLevel: 8,
-      subMaxLevel: 4,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,
       auto2top: true,
       mergeNavbar: true,
       ext: '.md',
@@ -74,7 +76,9 @@
   <script src="js/plugin/prism-yaml.js"></script>
   <script src="js/plugin/prism-go.js"></script>
   <script src="js/plugin/prism-matlab.js"></script>
-  <script src="js/plugin/docsify-tabs.min.js"></script>
+  <script src="js/plugin/docsify-tabs.min.js"></script>.
+  <!--侧边栏自动折叠-->
+  <script src="js/plugin/docsify-sidebar-collapse.min.js"></script>
 </body>
 
 </html>

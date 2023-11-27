@@ -9,3 +9,26 @@
 
 其中`wiki`目录用于存储markdown文件
 
+
+## 侧边栏折叠
+
+docsify本身不支持侧边栏折叠， 所以需要依赖第三方库， 当前库依赖的第三方库为[docsify-sidebar-collapse](https://github.com/iPeng6/docsify-sidebar-collapse)，只需三步即可做到侧边栏折叠:
+1. 引用css样式
+    ```html
+    <!--箭头样式-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+    <!--目录样式-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+    ```
+2. 引用js脚本:
+   ```html
+   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+   ```
+3. 添加配置:
+   ```js
+    window.$docsify = {
+        loadSidebar: true,
+        subMaxLevel: 3,
+        sidebarDisplayLevel: 1, // 主要是这个
+    }
+   ```
