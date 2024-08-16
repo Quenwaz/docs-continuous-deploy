@@ -2,7 +2,7 @@ import py_compile
 from python_obfuscator import obfuscator
 
 source_file = "server.py"
-target_file = "server_encryption.py"
+# target_file = "server_encryption.py"
 target_code = ""
 # with open(source_file, 'r', encoding="utf-8") as fp:
 #     target_code = obfuscator().obfuscate(code = fp.read())

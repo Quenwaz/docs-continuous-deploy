@@ -173,12 +173,14 @@ def reset_coverpage():
     
 
 if __name__ == "__main__":
+    import sys
     load_config()
-    debug = False
-    port = 80
+    port = 80 if len(sys.argv) < 2 else int(sys.argv[1])
     host = "0.0.0.0"
-    if debug:
-        app.run(host=host, port=port, debug=False)
-    else:
+    try:
         from waitress import serve
         serve(app, host=host, port=port, threads=8)
+        
+    except Exception as e:
+        print(e)
+        app.run(host=host, port=port, debug=False)
